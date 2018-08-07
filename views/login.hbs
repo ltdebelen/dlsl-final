@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link rel="stylesheet" href="../stylesheets/bootstrap.css">
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form" action="auth?mac={{studentmac}}" method="POST">
+
+        <center><img src="../images/logo-min.png" class="img-responsive" height="45%" width="45%"></img>
+        </center>
+        <h2>De La Salle Lipa</h2>
+        <h4>Student Onboarding Portal</h4>
+
+        <p id="error">{{errors}}</p>
+
+        <input type="text" placeholder="Username" class="glowing-border" name="studentusername" required/>
+
+        <input type="password" placeholder="Password" class="glowing-border" name="studentpassword" required/>
+
+        <input type="hidden" value="{{studentmac}}" name="studentmac">
+
+        <!-- Trigger the modal with a button -->
+        <a href="/terms" target="_blank">[ View Terms and Conditions ]</a>
+        <br><br>
+
+        <button type="submit" class="btn btn-primary">Accept Terms and Register</button>
+
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="../javascripts/bootstrap-jquery.js"></script>
+  <script src="../javascripts/bootstrap.js"></script>
+</body>
+
+</html>

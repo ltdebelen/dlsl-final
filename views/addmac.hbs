@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link rel="stylesheet" href="../stylesheets/bootstrap.css">
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="login-page">
+    <div class="form">
+
+      <center><img src="../images/logo-min.png" class="img-responsive" height="45%" width="45%"></img>
+      </center>
+      <h2>De La Salle Lipa</h2>
+      <h4>Successful Device Registration.</h4>
+      <h5>Please proceed to Student Wifi SSID using this device</h5>
+
+      <p id="error">{{errors}}</p>
+
+      <input style="color:green; font-weight:bold" name="studentusername" value="{{studentusername}}" disabled>
+      <input style="color:green; font-weight:bold" name="studentmac" value="{{studentmac}}" disabled>
+
+
+    </div>
+  </div>
+
+  <script src="../javascripts/bootstrap-jquery.js"></script>
+  <script src="../javascripts/bootstrap.js"></script>
+</body>
+
+</html>
